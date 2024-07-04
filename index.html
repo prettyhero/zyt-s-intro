@@ -45,6 +45,30 @@
             padding: 10px;
             text-align: center;
         }
+        .contact {
+            width: calc(33.333% - 40px);
+        }
+        .message-box {
+            width: calc(66.666% - 40px);
+        }
+        .message-box form {
+            display: flex;
+            flex-direction: column;
+        }
+        .message-box input, .message-box textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .message-box button {
+            padding: 10px;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -73,9 +97,18 @@
                 <p>暑假期间，我在广东度过了一个炎热的夏夜。那天晚上，我和几个老朋友相约在海边烧烤。微风徐徐，星光闪烁，我们手中拿着冰镇啤酒。点击标题阅读全文...</p>
             </div>
         </div>
-        <div class="box">
+        <div class="box contact">
             <h2>联系方式</h2>
             <p>电话: 136-3238-8068</p>
+        </div>
+        <div class="box message-box">
+            <h2>留言区</h2>
+            <form>
+                <input type="text" name="name" placeholder="您的名字" required>
+                <input type="email" name="email" placeholder="您的邮箱" required>
+                <textarea name="message" rows="5" placeholder="您的留言" required></textarea>
+                <button type="submit">提交留言</button>
+            </form>
         </div>
     </div>
     <footer>
